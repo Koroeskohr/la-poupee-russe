@@ -1,29 +1,19 @@
-/**
- * Reset some basic elements
- *//*
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
+html {
+    font-size: $base-font-size;
 }
-*/
 
+body {
+    font-size: 1.6rem;
+    font-family: Arvo;
+}
 
 /**
- * Basic styling
- *//*
-body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-feature-settings: "kern" 1;
-    -moz-font-feature-settings: "kern" 1;
-    -o-font-feature-settings: "kern" 1;
-    font-feature-settings: "kern" 1;
-    font-kerning: normal;
-}*/
+ * Text
+ */
+
+ p {
+    font-family: Arvo;
+ }
 
 /**
  * Headings
@@ -32,6 +22,9 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
 
+h1, h2 {
+    font-family: Bitter;
+}
 
 /**
  * Images
@@ -42,32 +35,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
-}
-
-code {
-    padding: 1px 5px;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: auto;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
-/**
  * Clearfix
  */
 %clearfix {
@@ -76,24 +43,5 @@ pre {
         content: "";
         display: table;
         clear: both;
-    }
-}
-
-
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
     }
 }
