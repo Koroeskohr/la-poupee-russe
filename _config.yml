@@ -19,3 +19,8 @@ github_username: archichouette
 markdown: kramdown
 host: 0.0.0.0
 port: 3000
+
+# Tags
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_permalink_style: pretty
