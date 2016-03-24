@@ -1,0 +1,20 @@
+.post {
+  position: relative;
+  margin-bottom: 15px;
+  & figure {
+    position: relative;
+  }
+
+}
+
+
+.post-info {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+
+  bottom: 0;
+  width: 100%;
+  background-color: $red;
+  color: #fff;
+}
