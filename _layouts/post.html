@@ -22,23 +22,23 @@ layout: default
     </p>
   </div>
 
+  {% if site.data.authors[page.author] %}
+  {% assign author = site.data.authors[page.author] %}
    <div class="post-meta col-sm-6 col-sm-offset-3">
-    <div class="author-image" style="
-      {% if page.author['image'] %}
-          background-image: url({{site.baseurl}}/images/authors/{{page.author['image']}});
+    <div class="author-image">
+      {% if author.image %}
+        <img src="{{site.baseurl}}/images/authors/{{author.image}}">
       {% endif %}
-    ">
     </div>
 
     <div class="author-info">
-      {% if page.author["name"] %}
-         <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="author-name" itemprop="name">{{ page.author["name"] }}</span></span>
-      {% endif %}
+         <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="author-name" itemprop="name">{{ author.name }}</span></span>
 
-      {% if page.author["description"] %}
-        <p>{{ page.author["description"] }}</p>
-      {% endif %}
+        <p>{{ author.description }}</p>
+
+        <a href="/notre-activite#contact" class="button">Demandez nos services !</a>
     </div>
   </div>
+  {% endif %}
 
 </article>
