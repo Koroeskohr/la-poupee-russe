@@ -4,7 +4,7 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="article-head" style="
     {% if page.article-img %}
-      background-image: url({{site.baseurl}}/images/{{page.article-img['large']}});
+      background-image: url({{site.baseurl}}/images/articles/{{page.url | replace: '/jekyll/update/', '' | replace: '/', '-'  | replace: '.html', ''}}/{{page.article-img['large']}});
     {% endif %}
   ">
     
