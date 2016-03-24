@@ -24,3 +24,24 @@ port: 3000
 tag_page_layout: tag_page
 tag_page_dir: tag
 tag_permalink_style: pretty
+
+# Image Tags
+image:
+  source: images/_fullsize
+  output: generated
+  presets:
+    list:
+      width: 400
+    cover:
+      width: 1920
+    col-12: 
+      width: 1200
+    col-10:
+      width: 720
+    col-4:
+      width: 480
+    users:
+      attr:
+        class: user-portrait
+        itemprop: image
+      width: 350
