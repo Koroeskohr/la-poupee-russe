@@ -1,0 +1,56 @@
+/* ARTICLE PAGE */
+
+article.post {
+
+  div.article-head {
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+    background-size: cover;
+    position: relative;
+
+    h1.post-title {
+      background: $red;
+      display: inline-block;
+      padding: 5px 10px;
+      color: white;
+      text-align: center;
+      position: absolute;
+      bottom: 20px;
+    }
+  }
+
+  div.post-content p {
+    font-size: 1.6rem;
+
+    &.post-date {
+      margin: 50px 0;
+    }
+  }
+
+  div.post-meta {
+    border: 2px solid $red;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    div.author-image {
+      width : 8vw;
+      height: 8vw;
+      background-size: cover;
+      border-radius: 4vw;
+      display: inline-block;
+      margin: 10px 0;
+    }
+
+    div.author-info {
+      display: inline-block;
+      vertical-align: top;
+      margin: 10px;
+    }
+
+    span.author-name {
+      font-size: 1.8rem;
+      font-family: $title-font-family;
+    }
+  }
+}
