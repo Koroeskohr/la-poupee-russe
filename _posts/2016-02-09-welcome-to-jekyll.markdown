@@ -1,6 +1,14 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+article-img:
+  small:  chickpea-small.jpg
+  medium: chickpea-medium.jpg
+  large:  "Welcome-to-Jekyll!.jpg"
+author: 
+  name: Renaud Duval
+  description: Selon Stock Photo il est le plus beau. Waouh !
+  image: Renaud-Duval.jpg
 date:   2016-02-09 08:52:12 +0000
 categories: jekyll update
 tags: oui non toto je lol
