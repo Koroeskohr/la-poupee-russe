@@ -5,16 +5,31 @@
     position: relative;
   }
 
+  & h1 {
+    font-size: 2.3rem;
+    font-weight: 800;
+    margin: 1rem 0;
+  }
+
+  & h2 {
+    font-size: 1.8rem;
+  }
+
+  & h3 {
+    font-size: 1.6rem;
+  }
 }
 
 
 .post-info {
+  padding: 0 1rem;
+  width: calc(100% - 30px);
   position: absolute;
   z-index: 1;
-  left: 0;
-
+  left: 15px;
+  top: 55%;
   bottom: 0;
-  width: 100%;
   background-color: $red;
   color: #fff;
+  opacity: 0.8;
 }
