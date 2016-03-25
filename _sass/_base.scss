@@ -64,3 +64,56 @@ h1, h2 {
         clear: both;
     }
 }
+
+.social-bar {
+    display: table;
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        display: table-cell;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.social-button {
+
+    &.fb {
+        background: url(/images/buttons/social/fb.png);
+        background-position: 0 0;
+        background-size: auto 100%;
+    }
+
+    &.twitter {
+        background: url(/images/buttons/social/twitter.png);
+        background-position: 0 0;
+        background-size: auto 100%;
+    }
+
+    &.g-plus {
+        background: url(/images/buttons/social/gPlus.png);
+        background-position: 0 0;
+        background-size: auto 100%;
+    }
+
+    &.pinterest {
+        background: url(/images/buttons/social/pinterest.png);
+        background-position: 0 0;
+        background-size: auto 100%;
+    }
+
+    &.linkedin {
+        background: url(/images/buttons/social/linkedin.png);
+        background-position: 0 0;
+        background-size: auto 100%;
+    }
+
+    &:hover {
+        background-position: 100% 0;
+    }
+
+    height: 70px;
+    width: 70px;
+}
