@@ -1,12 +1,14 @@
 .post {
   position: relative;
+  overflow: hidden;
+
   margin-bottom: 15px;
   & figure {
     position: relative;
   }
 
   & h1 {
-    font-size: 2.3rem;
+    font-size: 2.6rem;
     font-weight: 800;
     margin: 1rem 0;
   }
@@ -18,18 +20,46 @@
   & h3 {
     font-size: 1.6rem;
   }
+
+  &:hover .post-info {
+    transform: translateY(-50%);
+    transition: 0.5s;
+    opacity: 0.95;
+  }
+
+  &:hover .post-detail {
+    opacity: 1;
+    transition: 0.5s
+  }
 }
 
 
 .post-info {
-  padding: 0 1rem;
-  width: calc(100% - 30px);
   position: absolute;
   z-index: 1;
   left: 15px;
   top: 55%;
   bottom: 0;
+
+  height: 90%;
+  
+  width: calc(100% - 30px);
+  padding: 0 1rem;
   background-color: $red;
   color: #fff;
   opacity: 0.8;
+  transition: 0.2s;
+
+  & .date {
+    font-family: $sans-font-family;
+    text-transform: uppercase;
+  }
+
+  & .post-detail {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    transition: 0.3s;
+  }
 }

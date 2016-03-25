@@ -6,7 +6,12 @@
     </figure>
     <div class="post-info">
       <h1>{{ include.post.title }}</h1>
-      <p>excerpt</p>
+      <span class="date">{{ include.post.date | date: '%d %B %Y'}}</span>
+      <div class="post-detail">
+        <p>excerpt</p>
+        <p>excerpt</p>
+        <p>excerpt</p>
+      </div>
     </div>
   </article>
 </a>
