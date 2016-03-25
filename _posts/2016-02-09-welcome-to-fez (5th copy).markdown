@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!3"
+title:  "Comment habiller votre salle de réunion lumineuse ? azer zer"
 article-img:
   small:  chickpea-small.jpg
   medium: chickpea-medium.jpg
