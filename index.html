@@ -1,8 +1,13 @@
 ---
 layout: default
 ---
+<!-- article à la une -->
 
-<ul class="post-list">
+<!-- permet d'avoir les premiers articles sans le premier, qui est l'article à la une -->
+{% assign posts=site.posts offset: 1 limit: 10 %}
+{% include post-list.html posts=posts %}
+
+<!-- <ul class="post-list">
   {% for post in site.posts %}
     <li>
       {% image list Renaud-Duval.jpg %}
@@ -13,4 +18,4 @@ layout: default
       </h2>
     </li>
   {% endfor %}
-</ul>
+</ul> -->

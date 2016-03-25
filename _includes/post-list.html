@@ -1,0 +1,6 @@
+<section class="row post-list">
+{% for post in include.posts offset: 0 limit: 10 %}
+  {% include post.html post=post %}
+{% endfor %}
+</section>
+

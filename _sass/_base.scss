@@ -2,6 +2,24 @@ html {
     font-size: $base-font-size;
 }
 
+@media only screen and (max-width : 1199px){
+    html {
+        font-size: 57%;
+    }
+}
+
+@media only screen and (max-width : 991px){
+    html {
+        font-size: 57%;
+    }
+}
+
+@media only screen and (max-width : 767px){
+    html {
+        font-size: 75%;
+    }
+}
+
 body {
     font-size: 1.6rem;
     font-family: Arvo;
@@ -14,6 +32,7 @@ body {
  p {
     font-family: Arvo;
  }
+
 
 /**
  * Headings

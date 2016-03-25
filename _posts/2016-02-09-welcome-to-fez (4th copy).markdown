@@ -1,12 +1,15 @@
 ---
 layout: post
-title:  "Comment habiller votre salle de réunion lumineuse ?"
+title:  "Comment habiller votre salle de réunion lumineuse ?wwwwwwww"
 article-img:
   small:  chickpea-small.jpg
   medium: chickpea-medium.jpg
-  large:  "main.jpg"
-author: Duval
-date:   2016-02-09 08:52:12 +0000
+  large:  "Welcome-to-Jekyll!.jpg"
+author: 
+  name: Renaud Duval
+  description: Selon Stock Photo il est le plus beau. Waouh !
+  image: Renaud-Duval.jpg
+date:   2016-02-09 08:59:12 +0000
 categories: jekyll update
 tags: oui non toto je lol
 ---
