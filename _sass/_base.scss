@@ -2,21 +2,27 @@ html {
     font-size: $base-font-size;
 }
 
-@media only screen and (max-width : 1199px){
+@media only screen and (max-width : $lg-max-width){
     html {
         font-size: 57%;
     }
 }
 
-@media only screen and (max-width : 991px){
+@media only screen and (max-width : $md-max-width){
     html {
         font-size: 57%;
     }
 }
 
-@media only screen and (max-width : 767px){
+@media only screen and (max-width : $sm-max-width){
     html {
-        font-size: 75%;
+        font-size: 70%;
+    }
+}
+
+@media only screen and (max-width : $xs-max-width){
+    html {
+        font-size: 60%;
     }
 }
 
