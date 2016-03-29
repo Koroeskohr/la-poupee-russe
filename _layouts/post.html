@@ -39,11 +39,15 @@ layout: default
     </div>
 
     <div class="author-info">
-         <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="author-name" itemprop="name">{{ author.name }}</span></span>
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person">+
+        <span class="author-name" itemprop="name">
+          {{ author.name }}
+        </span>
+      </span>
 
-        <p>{{ author.description }}</p>
+      <p>{{ author.description }}</p>
 
-        <a href="/notre-activite#contact" class="button">Demandez nos services !</a>
+      <a href="/notre-activite#contact" class="button">Demandez nos services !</a>
     </div>
   </div>
   {% endif %}
