@@ -15,6 +15,8 @@ url: "http://www.architecte.fr" # the base hostname & protocol for your site
 twitter_username: archicool
 github_username: archichouette
 
+excerpt_separator: <!--more-->
+
 # Build settings
 markdown: kramdown
 host: 0.0.0.0
@@ -24,6 +26,9 @@ port: 3000
 tag_page_layout: tag_page
 tag_page_dir: tag
 tag_permalink_style: pretty
+
+# Pagination
+paginate: 5
 
 # Image Tags
 image:
@@ -42,6 +47,6 @@ image:
       width: 480
     users:
       attr:
-        class: user-portrait
+        class: author-portrait
         itemprop: image
       width: 350
