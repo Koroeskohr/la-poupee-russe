@@ -41,6 +41,7 @@ $xs-max-width: 479px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "hover.css/hover",
         "base",
         "layout",
         "header",
