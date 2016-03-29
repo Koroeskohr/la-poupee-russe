@@ -22,7 +22,7 @@
   }
 
   &:hover .post-info {
-    transform: translateY(-41%);
+    transform: translateY(-55%);
     transition: 0.5s;
     opacity: 0.95;
   }
@@ -43,7 +43,7 @@
   position: absolute;
   z-index: 1;
   left: 15px;
-  top: 55%;
+  top: 65%;
   bottom: 0;
 
   height: 78%;
