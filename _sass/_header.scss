@@ -40,6 +40,11 @@ nav a {
   margin-bottom: 4.0rem;
   & a {
     text-decoration: none;
+
+    & img {
+      height: 200px;
+      width: auto;
+    }
   }
 }
 
