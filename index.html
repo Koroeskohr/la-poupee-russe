@@ -2,7 +2,8 @@
 layout: default
 ---
 <!-- article à la une -->
-
+{% assign highlight = site.posts.first %}
+{% include highlight.html highlight=highlight %}
 <!-- permet d'avoir les premiers articles sans le premier, qui est l'article à la une -->
 {% assign posts=site.posts offset: 1 limit: 10 %}
 {% include post-list.html posts=posts %}
