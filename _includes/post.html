@@ -1,5 +1,6 @@
-<a href="{{ include.post.url | prepend: site.baseurl }}">
+{% assign author = site.data.authors[include.post.author] %}
 
+<a href="{{ include.post.url | prepend: site.baseurl }}">
   <article class="post col-sm-6 col-xl-4">
     <figure>
       {% image list Welcome-to-Jekyll!.jpg %}
@@ -7,10 +8,15 @@
     <div class="post-info">
       <h1>{{ include.post.title }}</h1>
       <span class="date">{{ include.post.date | date: '%d %B %Y'}}</span>
+      <p class="post-excerpt">
+        {{ include.post.excerpt | remove: '<p>' | remove: '</p>' }}
+      </p>
       <div class="post-detail">
-        <p>excerpt</p>
-        <p>excerpt</p>
-        <p>excerpt</p>
+
+        <figure class="post-author">
+          {% image users {{ author.image }} %}
+          <figcaption>{{ author.name }}</figcaption>
+        </figure>
       </div>
     </div>
   </article>
