@@ -1,0 +1,221 @@
+section#concept {
+  background: url(/images/notre-activite/concept-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+
+  &>div {
+    background: rgba($red, .9);
+    color: white;
+    padding: 0 20px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+
+    &>div {
+      display: inline-block;
+      box-sizing: border-box;
+      width: calc(100% - 120px);
+      margin-left: 15px;
+    }
+
+    img {
+      display: inline-block;
+      box-sizing: border-box;
+      width: 100px;
+      vertical-align: top;
+      margin-top: 30px;
+    }
+  }
+}
+
+section#types-travaux {
+  margin-top: 20px;
+
+  &>p {
+    color: white;
+    background: $red;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  & div#maison, & div#bureau {
+    min-height: calc(100vh - 100px);
+    color: white;
+
+    h2 {
+      text-align: center;
+      background: rgba($red, .8);
+    }
+
+    div.description {
+      vertical-align: middle;
+      opacity: 0;
+      transition: opacity 500ms;
+    }
+  }
+
+  div#maison {
+    background: linear-gradient(rgba($red, .0), rgba($red, .0)), 
+      url(/images/notre-activite/home.jpg);
+    background-position: center, center;
+    background-size: 100% 100%, auto 100%;
+    transition: all 500ms;
+
+    &:hover {
+      background: linear-gradient(rgba($red, .9), rgba($red, .9)), 
+      url(/images/notre-activite/home.jpg);
+      background-position: center, center;
+      background-size: 100% 100%, auto 110%;
+
+      div.description {
+        opacity: 1;
+      }
+    }
+  }
+
+  div#bureau {
+    background: linear-gradient(rgba($red, .0), rgba($red, .0)), 
+      url(/images/notre-activite/office.jpg);
+    background-position: center, center;
+    background-size: 100% 100%, auto 100%;
+    transition: all 500ms;
+
+    &:hover {
+      background: linear-gradient(rgba($red, .9), rgba($red, .9)), 
+      url(/images/notre-activite/office.jpg);
+      background-position: center, center;
+      background-size: 100% 100%, auto 110%;
+
+      div.description {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+section#equipe {
+  background: url(/images/notre-activite/team.jpg);
+  background-size: cover;
+  background-position: 75%;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+
+  &>div {
+    background: rgba($red, .9);
+    color: white;
+    padding: 0 20px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+  }
+}
+
+@mixin placeholder {
+  &::-moz-placeholder { @content }
+  &::-webkit-input-placeholder { @content }
+  &:-ms-input-placeholder { @content }
+}
+
+section#contact {
+  & > h2 {
+    text-align: center;
+    color: $red;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  form {
+    margin: 20px 0;
+
+    ul {
+      list-style: none;
+      border: 1px solid $red;
+      padding: 20px 0;
+
+      li {
+        padding: 0 15px;
+        margin:  10px 0;
+
+        textarea {
+          border: 2px solid $grey;
+          background: transparent;
+          margin: 0;
+
+          @include placeholder {
+            color: $grey;
+            position: relative;
+            top: 0;
+            opacity: 1;
+            display: inline;
+            transition: all 500ms;
+          }
+
+          &:focus {
+            border: 2px solid $red;
+            @include placeholder {
+              position: relative;
+              top: -10px;
+              opacity: 0;
+              display: none;
+            }
+          }
+        }
+
+        label {
+          border: none;
+          background: $red;
+          margin: 0;
+          text-align: center;
+          padding: 5px;
+
+          img {
+            height: 25px;
+          }
+        }
+
+        input {
+          border: none;
+          border-bottom: 2px solid $grey;
+          background: transparent;
+          margin: 0;
+          margin-top: 11px;
+
+          @include placeholder {
+            color: $grey;
+            position: relative;
+            top: 0;
+            opacity: 1;
+            display: inline;
+            transition: all 500ms;
+          }
+
+          &:focus {
+            border-bottom: 2px solid $red;
+            @include placeholder {
+              position: relative;
+              top: -10px;
+              opacity: 0;
+              display: none;
+            }
+          }
+
+          &[type="button"] {
+            background: $red;
+            border: none;
+            color: white;
+            display: block;
+            width: auto;
+            margin: auto;
+            padding: 5px 10px;
+          }
+        }
+      }
+    }
+  }
+}
