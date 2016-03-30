@@ -1,16 +1,48 @@
-.post {
+article.highlight-post {
+  position: relative;
+  margin-bottom: 30px;
+
+  .post-info {
+    position: absolute;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+
+    h1, h2 {
+      text-align: right;
+      display: inline;
+      color: #fff;
+      background-color: $grey;
+    }
+  } 
+}
+
+.post-list .post {
   position: relative;
   overflow: hidden;
 
   margin-bottom: 15px;
-  & figure {
+  & > a > figure {
     position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      box-sizing: border-box;
+      border-bottom: solid 8px $grey;
+    }
   }
 
   & h1 {
     font-size: 2.6rem;
     font-weight: 800;
     margin: 1rem 0;
+
   }
 
   & h2 {
@@ -22,26 +54,41 @@
   }
 
   &:hover .post-info {
-    transform: translateY(-50%);
-    transition: 0.5s;
+    transform: translateY(-55%);
+    transition: 0.3s;
     opacity: 0.95;
+  }
+
+  &:hover .post-excerpt {
+    opacity: 1;
+    transition: 0.3s;
   }
 
   &:hover .post-detail {
     opacity: 1;
-    transition: 0.5s
+    transition: 0.3s
+  }
+
+  &:hover .read-more,
+  &:focus .read-more,
+  &:active .read-more {
+    color: white;
+
+    &:before {
+      @include prefixed(transform, scaleX(1));
+    }
   }
 }
 
 
-.post-info {
+.post-list .post-info {
   position: absolute;
   z-index: 1;
   left: 15px;
-  top: 55%;
+  top: 65%;
   bottom: 0;
 
-  height: 90%;
+  height: 78%;
   
   width: calc(100% - 30px);
   padding: 0 1rem;
@@ -51,15 +98,58 @@
   transition: 0.2s;
 
   & .date {
+    display: block;
     font-family: $sans-font-family;
     text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+
+  & .post-excerpt {
+    opacity: 0;
   }
 
   & .post-detail {
-    opacity: 0;
     position: absolute;
+    width: 100%;
     z-index: -1;
     bottom: 0;
     transition: 0.3s;
+    & > a {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      top: 34%;
+      margin-right: 20px;
+      padding: 0 0.1rem;
+
+      font-family: $sans-font-family;
+      text-transform: uppercase;
+    }
+  }
+
+  & figure.post-author {
+    margin: 10px 0;
+
+    img {
+      margin-right: 1rem;
+      display: inline-block;
+      width : 7rem;
+      height: 7rem;
+      border-radius: 3.5rem;
+      border: 1px solid $grey;
+    }
+
+    figcaption {
+      display: inline-block;
+      font-family: $sans-font-family;
+      text-transform: uppercase;
+    }
+  }
+
+  .read-more {
+    padding: 0 0.4rem;
+    @include sweep-to-right();
   }
 }
+

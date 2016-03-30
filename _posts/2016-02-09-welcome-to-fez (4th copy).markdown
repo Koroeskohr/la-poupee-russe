@@ -1,10 +1,7 @@
 ---
 layout: post
-title:  "Comment habiller votre salle de réunion lumineuse ?wwwwwwww"
-article-img:
-  small:  chickpea-small.jpg
-  medium: chickpea-medium.jpg
-  large:  "Welcome-to-Jekyll!.jpg"
+title:  "Comment habiller votre salle de réunion lumineuse ? wwwwwwww"
+image: DuvalLarge.jpg
 author: Duval
 date:   2016-02-09 08:59:12 +0000
 categories: jekyll update
