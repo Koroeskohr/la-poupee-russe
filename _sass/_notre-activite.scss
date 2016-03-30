@@ -32,7 +32,7 @@ section#concept {
 }
 
 section#types-travaux {
-  margin-top: 20px;
+  margin-top: 40px;
 
   &>p {
     color: white;
@@ -44,16 +44,20 @@ section#types-travaux {
   & div#maison, & div#bureau {
     min-height: calc(100vh - 100px);
     color: white;
+    position: relative;
 
     h2 {
       text-align: center;
-      background: rgba($red, .8);
+      background: rgba($red, .9);
     }
 
     div.description {
-      vertical-align: middle;
-      opacity: 0;
-      transition: opacity 500ms;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba($red, .9);
+      padding: 5px 10px;
+      width: calc(100% - 30px);
     }
   }
 
@@ -61,42 +65,19 @@ section#types-travaux {
     background: linear-gradient(rgba($red, .0), rgba($red, .0)), 
       url(/images/notre-activite/home.jpg);
     background-position: center, center;
-    background-size: 100% 100%, auto 100%;
-    transition: all 500ms;
-
-    &:hover {
-      background: linear-gradient(rgba($red, .9), rgba($red, .9)), 
-      url(/images/notre-activite/home.jpg);
-      background-position: center, center;
-      background-size: 100% 100%, auto 110%;
-
-      div.description {
-        opacity: 1;
-      }
-    }
+    background-size: 100% 100%, cover;
   }
 
   div#bureau {
     background: linear-gradient(rgba($red, .0), rgba($red, .0)), 
       url(/images/notre-activite/office.jpg);
     background-position: center, center;
-    background-size: 100% 100%, auto 100%;
-    transition: all 500ms;
-
-    &:hover {
-      background: linear-gradient(rgba($red, .9), rgba($red, .9)), 
-      url(/images/notre-activite/office.jpg);
-      background-position: center, center;
-      background-size: 100% 100%, auto 110%;
-
-      div.description {
-        opacity: 1;
-      }
-    }
+    background-size: 100% 100%, cover;
   }
 }
 
 section#equipe {
+  margin-top: 40px;
   background: url(/images/notre-activite/team.jpg);
   background-size: cover;
   background-position: 75%;
@@ -121,6 +102,8 @@ section#equipe {
 }
 
 section#contact {
+  margin-top: 40px;
+
   & > h2 {
     text-align: center;
     color: $red;
@@ -219,3 +202,49 @@ section#contact {
     }
   }
 }
+
+/* Responsive */
+
+@media screen and (max-width: 767px) {
+  section#types-travaux {
+    & div#maison, & div#bureau {
+      min-height: calc(80vh - 100px);
+    }
+
+    h2 {
+      margin-top: 10px;
+    }
+
+    & > p {
+      margin-top: 10px;
+    }
+  }
+
+  section#equipe {
+    div {
+      top: auto;
+      bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  section#concept {
+    div {
+      height: 100%;
+      top: 0;
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      div {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+
