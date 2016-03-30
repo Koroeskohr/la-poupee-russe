@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "Comment habiller votre salle de réunion lumineuse ? wwwwwwww"
+subtitle: "Une aventure palpitante dans le monde de l'économie d'espace"
 article-img:
   small:  test.jpg
   medium: test.jpg
   large:  test.jpg
 author: Duval
-date:   2016-02-09 08:52:12 +0000
+date:   2017-02-08 08:52:12 +0000
 categories: jekyll update
 tags: oui non toto je lol
 ---

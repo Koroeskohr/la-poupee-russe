@@ -13,7 +13,7 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: $grey;
+		background: $red;
 		@include prefixed(transform, scaleX(0));
 		@include prefixed(transform-origin, 0 50%);
 		@include prefixed(transition-property, transform);
@@ -24,7 +24,8 @@
 }
 
 
-/*
+@mixin sweep-to-right-hover {
+
   &:hover,
   &:focus,
   &:active {
@@ -33,4 +34,5 @@
     &:before {
       @include prefixed(transform, scaleX(1));
     }
-  }*/
+  }
+}
