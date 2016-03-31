@@ -1,6 +1,6 @@
 {% assign highlight=include.highlight %}
 <div class="row">
-  <a href="{{ post.url | prepend: site.baseurl }}">
+  <a href="{{ highlight.url | prepend: site.baseurl }}">
     <article class="highlight-post col-sm-12">
       <figure>
         {% image col-12 {{ highlight.image }} %}        
