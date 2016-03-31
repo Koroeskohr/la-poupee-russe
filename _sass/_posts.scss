@@ -200,3 +200,39 @@ article.highlight-post {
   }
 }
 
+@media screen and(max-width: 767px) {
+  article.highlight-post {
+    overflow: hidden;
+    height: 80vh;
+
+    figure {
+      height: 100%;
+      overflow: hidden;
+
+      img {
+        transform: translateX(-50%);
+        margin-left: 50%;
+      }
+    }
+
+    div.post-info {
+        width: calc(100vw - 38px);
+
+        div.post-title {
+          text-align: center;
+          width: 100%;
+
+          h1 {
+            font-size: 2.6rem;
+            line-height: 4.5rem;
+            font-weight: bold;
+          }
+
+          h2 {
+            font-size: 1.6rem;
+            line-height: 3.0rem;
+          }
+        }
+      }
+  }
+}
