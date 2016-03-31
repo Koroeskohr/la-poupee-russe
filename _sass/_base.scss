@@ -129,9 +129,16 @@ img {
   width: 70px;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: $sm-max-width) {
   .social-button {
     height: 60px;
     width: 60px;
+  }
+}
+
+@media screen and (max-width: $xs-max-width) {
+  .social-button {
+    height: 50px;
+    width: 50px;
   }
 }
