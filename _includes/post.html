@@ -3,7 +3,7 @@
 <article class="post col-sm-6 col-xl-4">
   <a href="{{ include.post.url | prepend: site.baseurl }}">
     <figure>
-      {% image list test.jpg %}
+      {% image list {{include.post.image}} %}
     </figure>
   </a>
 
