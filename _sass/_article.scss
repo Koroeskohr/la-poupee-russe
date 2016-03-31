@@ -11,14 +11,19 @@ article.post {
     background-position: center;
     position: relative;
 
-    h1.post-title {
-      background: $red;
-      display: inline-block;
-      padding: 5px 10px;
-      color: white;
-      text-align: center;
+    div.post-title {
       position: absolute;
       bottom: 20px;
+      text-align: center;
+
+      h1 {
+        background: $red;
+        display: inline;
+        padding: 0.7rem 0.7rem;
+        color: white;
+        line-height: 5.4rem;
+      }
+      
     }
   }
 
