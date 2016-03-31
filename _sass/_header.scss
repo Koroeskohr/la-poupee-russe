@@ -145,3 +145,138 @@ nav a {
     }
   }
 }
+
+@media screen and(max-width: $md-max-width) {
+  header {
+    width: 100vw;
+    height: 70px;
+    min-height: 70px;
+    display: block;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    z-index: 10;
+    border-right: none;
+    border-bottom: solid 8px $grey;
+    text-align: left;
+
+    .logo {
+      margin: 0;
+      text-align: left;
+      display: block;
+      float: left;
+      width: 33.3%;
+      box-sizing: border-box;
+
+      img {
+        margin: 5px 10px;
+        height: 60px;
+        width: auto;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      h1 {
+        display: inline-block;
+        font-size: 2.5rem;
+        vertical-align: middle;
+        width: calc(100% - 60px)
+      }
+    }
+
+    .search {
+      margin: 5px 0;
+        display: block;
+        float: left;
+        width: 33.3%;
+        max-width: 33.3%;
+        text-align: center;
+        box-sizing: border-box;
+
+        input {
+          max-width: 160px;
+        }
+    }
+
+    #menu-trigger {
+      margin: 5px 0;
+      padding-right: 10px;
+      display: block;
+      float: left;
+      width: 33.3%;
+      color: white;
+      text-align: right;
+      font-size: 4rem;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+
+    nav {
+        margin-top: 70px;
+        padding: 20px;
+        text-align: center;
+        display: block;
+        width: 100vw;
+        height: calc(100vh - 70px);
+        background: rgba($red, .9);
+        position: absolute;
+        top: -100vh;
+        z-index: -1;
+    }
+  }
+
+  body {
+    padding-top: 70px;
+  }
+}
+
+@media screen and(max-width: $sm-max-width) {
+  header .logo {
+    width: 40%;
+    margin-top: 10px;
+
+    img {
+      height: 40px;
+    }
+    
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  header .search {
+    width: 40%;
+    max-width: 40%;
+    margin-top: 10px;
+  }
+
+  header #menu-trigger {
+    width: 20%;
+  }
+}
+
+@media screen and(max-width: $xs-max-width) {
+  header .logo {
+    width: 45%;
+    margin-top: 5px;
+
+    img {
+      height: 40px;
+    }
+    
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  header .search {
+    width: 40%;
+    max-width: 45%;
+    margin-top: 10px;
+  }
+
+  header #menu-trigger {
+    width: 15%;
+    font-size: 3rem;
+  }
+}
