@@ -42,6 +42,7 @@ article.post {
 
     div.author-image {
       display: inline-block;
+      vertical-align: middle;
       margin: 10px 0;
       text-align: center;
       width: 25%;
@@ -57,7 +58,7 @@ article.post {
 
     div.author-info {
       display: inline-block;
-      vertical-align: top;
+      vertical-align: middle;
       margin: 10px;
       width: calc(75% - 25px);
       box-sizing: border-box;
