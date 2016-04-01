@@ -1,4 +1,9 @@
-Duval :
-  name: Renaud Duval
-  description: Selon Stock Photo il est le plus beau. Waouh !
+Duval:
+  name: Henri Simon
+  description: Fondateur du studio La Poupée Russe, Henri Simon possède des années d'expérience en architecture d'intérieur. Il saura vous conseiller la meilleure façon d'agencer votre espace.
   image: Renaud-Duval.jpg
+
+Sanchez:
+  name: Patrick Sanchez
+  description: Il a rejoint le studio peu de temps après sa création et s'est parfaitement intégré à sa spécialité. Un grand visionnaire qui conçoit les projets les plus excentriques.
+  image: Patrick-Sanchez.jpg
