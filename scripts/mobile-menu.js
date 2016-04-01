@@ -15,4 +15,10 @@ $(document).ready(function() {
       menuOpen = false;
     }
   })
+
+  // add class to p
+  $(".post-content p:not(img)")
+    .addClass('col-sm-6 col-sm-offset-3');
+
+  $(".post-content p:has(img)").removeClass('col-sm-6 col-sm-offset-3');
 })
