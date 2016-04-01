@@ -42,9 +42,15 @@ image:
       width: 1920
     col-12: 
       width: 1280
+      attr:
+        class: "col-sm-12"
     col-10:
+      attr:
+        class: "col-sm-10 col-sm-offset-1"
       width: 750
-    col-4:
+    col-6:
+      attr:
+        class: "col-sm-6 col-sm-offset-3"
       width: 500
     users:
       attr:
