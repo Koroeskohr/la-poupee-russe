@@ -49,7 +49,7 @@ article.post {
 
       img {
         width : 8vw;
-        height: 8vw;
+        height: auto;
         border-radius: 4vw;
         border: 2px solid $red;
       }
@@ -79,5 +79,13 @@ article.post {
       font-size: 1.8rem;
       font-family: $title-font-family;
     }
+  }
+}
+
+@media screen and(max-width: $md-max-width) {
+  article.post div.post-meta div.author-image img {
+    width : 20vw;
+    height: auto;
+    border-radius: 10vw;
   }
 }
