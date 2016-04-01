@@ -90,6 +90,8 @@ img {
 }
 
 .social-button {
+  margin: 0 -13px; //HACK: refaire les sprites
+
 
   &.fb {
     background: url(/images/buttons/social/fb.png);
