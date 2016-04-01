@@ -1,0 +1,7 @@
+---
+layout: tag_page
+---
+
+{% assign posts=site.categories.maison offset: 1 limit: 10 %}
+
+{% include post-list.html posts=posts %}
