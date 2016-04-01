@@ -1,0 +1,26 @@
+#tag-cloud {
+  display: flex;
+  a {
+    background: $red;
+    padding: 5rem 5rem;
+    color: #fff;
+    font-family: $sans-font-family;
+    text-transform: uppercase;
+    border-radius: 1rem;
+
+    padding: 3rem;
+    margin-right: 1.1rem;
+    margin-bottom: 2.1rem;
+  }
+
+}
+
+
+
+.category-page h2 {
+  font-family: $title-font-family;
+  color: $red;
+  margin: 5rem 0;
+  text-align: center;
+  font-size: 6rem;
+}
