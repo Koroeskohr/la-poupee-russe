@@ -1,5 +1,5 @@
 #tag-cloud {
-  display: flex;
+  text-align: center;
   a {
     background: $red;
     padding: 5rem 5rem;
@@ -11,6 +11,7 @@
     padding: 3rem;
     margin-right: 1.1rem;
     margin-bottom: 2.1rem;
+    display: inline-block;
   }
 
 }
