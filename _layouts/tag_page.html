@@ -2,7 +2,8 @@
 layout: default
 ---
 <div class="category-page">
-  <h2>Maison</h2>
+  <h2>{{ page.url | replace: site.baseurl, '' | replace: '/', '' }}</h2>
+  <h3>{{ page.tag }}</h3>
   <ul>
   {% for post in page.posts %}
     <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }} | Tags: {{ post | tags }})</li>

@@ -1,5 +1,5 @@
 <section class="row post-list">
-{% for post in include.posts offset: 1 limit: 9 %}
+{% for post in include.posts offset: include.offset limit: 9 %}
   {% include post.html post=post %}
 {% endfor %}
 </section>
