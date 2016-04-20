@@ -1,3 +1,8 @@
+.notre-activite .content {
+  background: rgba($red, .9);
+  color: white;
+}
+
 section#concept {
   background: url(../images/notre-activite/concept-bg.jpg);
   background-size: cover;
@@ -6,28 +11,19 @@ section#concept {
   min-height: 100vh;
   position: relative;
 
+  h2 {
+    margin-top: 0;
+  }
+
+  p {
+    line-height: 23px;
+  }
+
   &>div {
-    background: rgba($red, .9);
-    color: white;
-    padding: 0 20px;
+    padding: 2rem;
     position: absolute;
     right: 21px;
     top: 20px;
-
-    &>div {
-      display: inline-block;
-      box-sizing: border-box;
-      width: calc(100% - 120px);
-    }
-
-    img {
-      display: inline-block;
-      box-sizing: border-box;
-      width: 100px;
-      vertical-align: top;
-      margin-top: 30px;
-      margin-right: 15px;
-    }
   }
 }
 
@@ -41,7 +37,7 @@ section#types-travaux {
     font-size: 1.8rem;
   }
 
-  & div#maison, & div#bureau {
+  & #maison, & #bureau {
     min-height: calc(100vh - 100px);
     color: white;
     position: relative;
@@ -56,23 +52,30 @@ section#types-travaux {
       top: 50%;
       transform: translateY(-50%);
       background: rgba($red, .9);
-      padding: 5px 10px;
+      padding: 2rem;
       width: calc(100% - 30px);
+      line-height: 23px;
     }
   }
 
-  div#maison {
+  #maison {
     background: linear-gradient(rgba($red, .0), rgba($red, .0)), 
       url(../images/notre-activite/home.jpg);
     background-position: center, center;
     background-size: 100% 100%, cover;
   }
 
-  div#bureau {
+  #bureau {
     background: linear-gradient(rgba($red, .0), rgba($red, .0)), 
       url(../images/notre-activite/office.jpg);
     background-position: center, center;
     background-size: 100% 100%, cover;
+  }
+
+  .resume {
+    margin-top: 1rem;
+    padding: 2rem 5rem;
+    line-height: 25px;
   }
 }
 
@@ -92,6 +95,8 @@ section#equipe {
     position: absolute;
     left: 0px;
     top: 10px;
+    line-height: 23px;
+
   }
 }
 
