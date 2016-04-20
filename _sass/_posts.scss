@@ -49,6 +49,27 @@ article.highlight-post {
   }
 }
 
+.pagination {
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 0;
+  font-size: 1.8rem;
+  font-family: $sans-font-family;
+
+  .previous, .next {
+    display: inline-block;
+    background: $red;
+    color: #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+
+    &.inactive {
+      background: lighten($red, 30%);
+    }
+  }
+}
+
 @media screen and (max-width: $sm-max-width) {
   article.highlight-post {
     height: 100vh;

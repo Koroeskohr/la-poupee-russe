@@ -28,7 +28,7 @@ tag_page_dir: tag
 tag_permalink_style: pretty
 
 # Pagination
-paginate: 6
+paginate: 5
 
 # Image Tags
 image:
