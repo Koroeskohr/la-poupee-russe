@@ -1,5 +1,5 @@
 section#concept {
-  background: url(/images/notre-activite/concept-bg.jpg);
+  background: url(../images/notre-activite/concept-bg.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -63,14 +63,14 @@ section#types-travaux {
 
   div#maison {
     background: linear-gradient(rgba($red, .0), rgba($red, .0)), 
-      url(/images/notre-activite/home.jpg);
+      url(../images/notre-activite/home.jpg);
     background-position: center, center;
     background-size: 100% 100%, cover;
   }
 
   div#bureau {
     background: linear-gradient(rgba($red, .0), rgba($red, .0)), 
-      url(/images/notre-activite/office.jpg);
+      url(../images/notre-activite/office.jpg);
     background-position: center, center;
     background-size: 100% 100%, cover;
   }
@@ -78,7 +78,7 @@ section#types-travaux {
 
 section#equipe {
   margin-top: 40px;
-  background: url(/images/notre-activite/team.jpg);
+  background: url(../images/notre-activite/team.jpg);
   background-size: cover;
   background-position: 75%;
   width: 100%;

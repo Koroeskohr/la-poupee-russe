@@ -10,7 +10,7 @@ title: Architecte d'intérieur
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Le site d'un architecte d'intérieur
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/la-poupee-russe" # the subpath of your site, e.g. /blog
 url: "http://www.architecte.fr" # the base hostname & protocol for your site
 twitter_username: archicool
 github_username: archichouette
@@ -46,11 +46,11 @@ image:
         class: "col-sm-12"
     col-10:
       attr:
-        class: "col-sm-10 col-sm-offset-1"
+        class: "col-sm-10 col-sm-offset-1 col-xs-12"
       width: 750
     col-6:
       attr:
-        class: "col-sm-6 col-sm-offset-3"
+        class: "col-sm-6 col-sm-offset-3 col-xs-12"
       width: 500
     users:
       attr:
