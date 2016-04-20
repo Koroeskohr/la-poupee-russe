@@ -4,7 +4,7 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="article-head" style="
     {% if page.image %}
-      background-image: url({{site.baseurl}}/images/articles/{{page.image}});
+      background-image: url({{ site.baseurl }}/images/articles/{{page.image}});
     {% endif %}
   ">
     
@@ -38,7 +38,7 @@ layout: default
        <div class="post-meta col-sm-8 col-sm-offset-2 col-xs-12 col-xl-6 col-xl-offset-3">
         <div class="author-image">
           {% if author.image %}
-            <img src="{{site.baseurl}}/images/authors/{{author.image}}">
+            <img src="{{ site.baseurl }}/images/authors/{{author.image}}">
           {% endif %}
         </div>
 
