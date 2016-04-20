@@ -5,13 +5,13 @@ $(document).ready(function() {
     if (!menuOpen) {
       $("header nav").animate({
         top: 0
-      }, 500);
+      }, 300);
       menuOpen = true;
     }
     else {
       $("header nav").animate({
         top: '-100vh'
-      }, 500);
+      }, 300);
       menuOpen = false;
     }
   })
