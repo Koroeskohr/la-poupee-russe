@@ -8,13 +8,13 @@ layout: default
     {% endif %}
   ">
     
-    <div class="post-title col-sm-6 col-sm-offset-3">
+    <div class="post-title col-sm-8 col-sm-offset-2 col-xs-12 col-xl-6 col-xl-offset-3 col-xl-6 col-xl-offset-3">
       <h1 itemprop="name headline">{{ page.title }}</h1>
     </div>
 
   </div>
 
-  <div class="col-sm-6 col-sm-offset-3">
+  <div class="col-sm-8 col-sm-offset-2 col-xs-12 col-xl-6 col-xl-offset-3">
     {% include social-bar.html %}
   </div>
 
@@ -27,31 +27,34 @@ layout: default
     </p>
   </div>
 
-  <div class="col-sm-6 col-sm-offset-3">
+  <div class="col-sm-8 col-sm-offset-2 col-xs-12 col-xl-6 col-xl-offset-3">
     {% include social-bar.html %}
   </div>
 
-  {% if site.data.authors[page.author] %}
-  {% assign author = site.data.authors[page.author] %}
-   <div class="post-meta col-sm-6 col-sm-offset-3">
-    <div class="author-image">
-      {% if author.image %}
-        <img src="{{site.baseurl}}/images/authors/{{author.image}}">
+  <div class="clearfix"></div>
+  <div class="container-fluid">
+      {% if site.data.authors[page.author] %}
+      {% assign author = site.data.authors[page.author] %}
+       <div class="post-meta col-sm-8 col-sm-offset-2 col-xs-12 col-xl-6 col-xl-offset-3">
+        <div class="author-image">
+          {% if author.image %}
+            <img src="{{site.baseurl}}/images/authors/{{author.image}}">
+          {% endif %}
+        </div>
+
+        <div class="author-info">
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="author-name" itemprop="name">
+              {{ author.name }}
+            </span>
+          </span>
+
+          <p>{{ author.description }}</p>
+
+          <a href="{{ site.baseurl }}/notre-activite/#contact" class="button">Demandez nos services !</a>
+        </div>
+      </div>
       {% endif %}
-    </div>
-
-    <div class="author-info">
-      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span class="author-name" itemprop="name">
-          {{ author.name }}
-        </span>
-      </span>
-
-      <p>{{ author.description }}</p>
-
-      <a href="/notre-activite#contact" class="button">Demandez nos services !</a>
-    </div>
-  </div>
-  {% endif %}
+</div>
 
 </article>
