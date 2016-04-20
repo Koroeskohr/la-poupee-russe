@@ -1,5 +1,15 @@
 ---
-layout: tab_page
+layout: default
 ---
+<div class="category-page">
+  <h2>{{ page.url | replace: '/', '' }}</h2>
 
-{% include post-list.html posts=posts %}
+  <div class="row">
+    <div id="tag-cloud" class="col-sm-12">
+      {{ site | tag_cloud }}
+    </div>
+  </div>
+
+  {{ content }}
+  
+</div>
