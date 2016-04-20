@@ -7,6 +7,8 @@ article.highlight-post {
   }
 
   .post-info {
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
     position: absolute;
     left: 5%;
     right: calc(15px + 5%);
@@ -166,7 +168,7 @@ article.highlight-post {
       position: absolute;
       bottom: 0;
       right: 0;
-      top: 34%;
+      top: 37%;
       margin-right: 20px;
       padding: 0 0.1rem;
 
@@ -176,10 +178,10 @@ article.highlight-post {
   }
 
   & figure.post-author {
-    margin: 10px 0;
+    margin: calc(1rem + 8px) 0;
 
     img {
-      margin-right: 1rem;
+      margin-right: calc(1rem - 5px);
       display: inline-block;
       width : 7rem;
       height: 7rem;
