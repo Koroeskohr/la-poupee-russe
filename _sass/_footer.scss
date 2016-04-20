@@ -1,0 +1,23 @@
+footer {
+  clear: both;
+  background-color: $grey;
+  color: #c5c5c5;
+  padding: 1rem 1rem;
+  margin-top: 10rem;
+
+  ul {
+    margin: 0;
+    padding-left: 3rem;
+  }
+  li {
+    font-family: $sans-font-family;
+    list-style-type: none;
+    text-transform: uppercase;
+
+  }
+
+  .social-bar {
+    opacity: 0.8;
+    float: right;
+  }
+}
