@@ -72,15 +72,28 @@ article.post {
       box-sizing: border-box;
 
       a.button {
-        background: $grey;
+        text-decoration: none;
         display: block;
-        padding: 10px 5px;
+        padding: 1.2rem;
         margin: 10px auto;
-        color: white;
-        font-family: $title-font-family;
-        font-size: 1.5rem;
+        background: $grey;
+        color: #fff;
+        font-family: $sans-font-family;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 1.8rem;
         text-align: center;
         width: auto;
+
+        img {
+          display: inline-block;
+          max-width: 2rem;
+          margin-right: 0.5rem;
+        }
+
+        .text {
+          display: inline-block;
+        }
       }
     }
 
@@ -91,10 +104,17 @@ article.post {
   }
 }
 
-@media screen and(max-width: $md-max-width) {
+@media screen and (max-width: $md-max-width) {
   article.post div.post-meta div.author-image img {
     width : 20vw;
     height: auto;
     border-radius: 10vw;
+  }
+}
+
+
+@media screen and (max-width: $sm-max-width) {
+  article.post div.post-meta div.author-info a.button img {
+    display: none;
   }
 }
