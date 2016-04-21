@@ -138,6 +138,7 @@ section#contact {
           @include placeholder {
             font-family: $sans-font-family;
             text-transform: uppercase;
+            font-weight: 800;
             color: $grey;
             position: relative;
             top: 0;
@@ -180,6 +181,7 @@ section#contact {
           @include placeholder {
             font-family: $sans-font-family;
             text-transform: uppercase;
+            font-weight: 800;
             color: $grey;
             position: relative;
             top: 0;
