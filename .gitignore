@@ -3,3 +3,4 @@ _site/
 .jekyll-metadata
 *.tar.gz
 *.zip
+_plugins/notifier.rb
