@@ -6,12 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Architecte d'intérieur
+title: La Poupée Russe - Studio d'architectes d'intérieur - Economie d'espace 
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Le site d'un architecte d'intérieur
 baseurl: "/la-poupee-russe" # the subpath of your site, e.g. /blog
-url: "http://www.architecte.fr" # the base hostname & protocol for your site
+url: "http://www.victorviale.com" # the base hostname & protocol for your site
 twitter_username: archicool
 github_username: archichouette
 
