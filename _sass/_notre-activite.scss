@@ -3,6 +3,23 @@
   color: white;
 }
 
+.notre-activite .dolls {
+  text-align: center;
+  margin-bottom: 60px;
+
+  img {
+    display: inline-block;
+  }
+
+  &:nth-of-type(2n) {
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+  }
+}
+
 section#concept {
   background: url(../images/notre-activite/concept-bg.jpg);
   background-size: cover;
@@ -10,6 +27,8 @@ section#concept {
   width: 100%;
   min-height: 100vh;
   position: relative;
+
+  margin-bottom: 60px;
 
   h2 {
     margin-top: 0;
@@ -28,7 +47,7 @@ section#concept {
 }
 
 section#types-travaux {
-  margin-top: 40px;
+  margin-bottom: 60px;
 
   &>p {
     color: white;
@@ -80,7 +99,7 @@ section#types-travaux {
 }
 
 section#equipe {
-  margin-top: 40px;
+  margin-bottom: 60px;
   background: url(../images/notre-activite/team.jpg);
   background-size: cover;
   background-position: 75%;
@@ -241,22 +260,10 @@ section#contact {
   }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: $md-max-width) {
   section#concept {
     div {
-      height: 100%;
-      top: 0;
-
-      img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      
-      div {
-        display: block;
-        width: 100%;
-      }
+      right: 0;
     }
   }
 }
