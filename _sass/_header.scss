@@ -155,8 +155,8 @@ nav a {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 9999;
     top: 0;
-    z-index: 10;
     margin: 0;
     padding: 0;
     border-right: none;
