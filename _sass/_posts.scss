@@ -25,11 +25,13 @@ article.highlight-post {
     h1 {
       font-size: 4.2rem;
       line-height: 5.4rem;
+      border-bottom-left-radius: 12px;
     }
 
     h2 {
       font-size: 2.3rem;
       line-height: 4rem;
+      border-bottom-left-radius: 8px;
     }
   } 
 
@@ -38,6 +40,8 @@ article.highlight-post {
   }
 
   .read-more {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     color: #fff;
     padding: 0.3rem 0.7rem;
     font-family: $sans-font-family;
@@ -139,19 +143,27 @@ article.highlight-post {
   & h3 {
     font-size: 1.6rem;
   }
+}
 
-  &:hover .post-info {
+@media screen and (max-width: $xs-max-width) {
+  .post-list .post-info {
+    top: 61%;
+  }
+}
+
+@media screen and (min-width: $sm-max-width){
+  .post-list .post:hover .post-info {
     transform: translateY(-55%);
     transition: 0.3s;
     opacity: 0.95;
   }
 
-  &:hover .post-excerpt {
+  .post-list .post:hover .post-excerpt {
     opacity: 1;
     transition: 0.3s;
   }
 
-  &:hover .post-detail {
+  .post-list .post:hover .post-detail {
     opacity: 1;
     transition: 0.3s
   }
@@ -159,6 +171,7 @@ article.highlight-post {
 
 
 .post-list .post-info {
+  border-top-right-radius: 5%;
   position: absolute;
   z-index: 1;
   left: 15px;
