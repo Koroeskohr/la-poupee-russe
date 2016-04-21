@@ -57,6 +57,7 @@ article.highlight-post {
   font-family: $sans-font-family;
 
   .previous, .next {
+    text-decoration: none;
     display: inline-block;
     background: $red;
     color: #fff;
@@ -64,10 +65,16 @@ article.highlight-post {
     height: 2.5rem;
     text-align: center;
 
+    &:not(.inactive):active, &:not(.inactive):focus {
+      background: $grey;
+    }
+
     &.inactive {
       background: lighten($red, 30%);
     }
   }
+
+
 }
 
 @media screen and (max-width: $sm-max-width) {
