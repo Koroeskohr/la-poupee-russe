@@ -1,8 +1,12 @@
 footer {
+  padding: 4rem 1rem 11rem;
   clear: both;
   background-color: $grey;
-  padding: 1rem 1rem;
   margin-top: 10rem;
+
+  .links > a {
+    text-decoration: none;
+  }
 
   h2 {
     color: #fff;
