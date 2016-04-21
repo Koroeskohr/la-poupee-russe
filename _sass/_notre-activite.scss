@@ -8,6 +8,8 @@
   margin-bottom: 60px;
 
   img {
+    -webkit-filter: grayscale(60%) brightness(139%);
+    filter: grayscale(60%) brightness(139%);
     max-height: 100px;
     display: inline-block;
   }
