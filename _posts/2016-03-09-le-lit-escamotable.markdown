@@ -16,8 +16,8 @@ C’est simple et ingénieux. On croit avoir à faire à un bureau, à un meuble
 
 {% image col-10 lit-esc-2.jpg %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacus erat, aliquam non aliquam ac, porta tristique enim. Quisque in turpis vel neque efficitur placerat. Sed efficitur libero ipsum, a faucibus massa auctor ac. Integer rhoncus purus iaculis gravida rhoncus. Suspendisse congue ullamcorper mauris quis hendrerit. Maecenas gravida augue in odio pulvinar efficitur. Aliquam bibendum, lectus congue interdum imperdiet, neque leo tristique massa, eget rutrum tellus nisl eu nunc. Proin ornare ex et magna auctor convallis. Praesent vel nunc et purus iaculis rhoncus. Morbi a posuere ligula. Aenean malesuada, leo ac sagittis egestas, leo lorem facilisis nisl, ac hendrerit velit massa eget neque. Aliquam ultricies tempus varius.
+S'il n'est pas accessible à toutes les bourses (à partir de 6000 euros tout de même), le lit escamotable Hop & Up offre une alternative intéressante aux autres lits fonctionnels type clic-clac. Le tout, sans sacrifier l'esthétisme comme le résume sa créatrice, la designer Sandra Planchez, "il n'y a pas de de fatalité ou de lien de causalité entre le laid et le pratique".  
 
 {% image col-6 lit-escamotable-blog.jpg %}
 
-Morbi orci velit, venenatis id neque lacinia, pharetra rhoncus felis. Mauris condimentum ac sapien sed porta. Nullam id tortor nisl. Curabitur at scelerisque nisl, id eleifend sem. Cras erat quam, dapibus eget felis non, mollis dictum eros. Aliquam in pellentesque arcu. Praesent maximus purus eget enim tincidunt, non rhoncus est consectetur.
+Il s'agit là d'une excellente solution pour pouvoir profiter au maximum de sa pièce à vivre le jour, et dormir dans un lit confortable la nuit. 
